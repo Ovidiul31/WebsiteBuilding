@@ -244,3 +244,7 @@
         })
 })()
 
+import GLightbox from 'glightbox';
+const portfolioLightbox = GLightbox({
+    selector: '.portfolio-lightbox'
+});
