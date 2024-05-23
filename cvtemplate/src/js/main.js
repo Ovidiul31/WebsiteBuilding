@@ -1,3 +1,4 @@
+import GLightbox from 'glightbox';
 (function () {
     "use strict";
 
@@ -169,12 +170,12 @@
     //     });
     // }
 
-    /**
-     * Initiate portfolio lightbox 
-     */
-    // const portfolioLightbox = GLightbox({
-    //   selector: '.portfolio-lightbox'
-    // });
+    // **
+    //  * Initiate portfolio lightbox 
+    //  *
+     const portfolioLightbox = GLightbox({
+        selector: '.portfolio-lightbox'
+     });
 
     /**
      * Testimonials slider
@@ -244,7 +245,4 @@
         })
 })()
 
-import GLightbox from 'glightbox';
-const portfolioLightbox = GLightbox({
-    selector: '.portfolio-lightbox'
-});
+

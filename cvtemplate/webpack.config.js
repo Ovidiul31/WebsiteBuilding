@@ -15,11 +15,12 @@ const paths = {
 const favicon = path.resolve(paths.source, 'images', 'favicon.ico');
 const myHeader = fs.readFileSync(paths.source + '/views/header.html');
 const myBanner = fs.readFileSync(paths.source + '/views/banner.html');
-const myFooter = fs.readFileSync(paths.source + '/views/footer.html');
 const myAbout = fs.readFileSync(paths.source + '/views/about.html');
-const myContact = fs.readFileSync(paths.source + '/views/contact.html');
-const myExperience = fs.readFileSync(paths.source + '/views/experience.html');
 const myPortfolio = fs.readFileSync(paths.source + '/views/portfolio.html');
+const myExperience = fs.readFileSync(paths.source + '/views/experience.html');
+const myContact = fs.readFileSync(paths.source + '/views/contact.html');
+const myFooter = fs.readFileSync(paths.source + '/views/footer.html');
+const myGitHub = fs.readFileSync(paths.source + '/views/githubapi.html');
 module.exports = {
     stats: {
         errorDetails: true,
@@ -43,6 +44,7 @@ module.exports = {
             myContact: myContact,
             myExperience: myExperience,
             myPortfolio: myPortfolio,
+            gitHubApi: myGitHub,
             template: './src/index.html',
             filename: 'index.html',
             inject: 'body'
